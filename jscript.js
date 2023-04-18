@@ -113,7 +113,8 @@
 
 
 
-		//copiar
+		/*  Función copiar permite copiar del área de texto procesado al clipboard del navegador, mostrando
+		una alerta tras realizar la acción */
 		function copiar() {
 
 			  let texto = document.getElementById("textoEncriptado").value;
@@ -125,7 +126,8 @@
 
 
 
-
+		/* Funcion pegar, pegar del clipboard del navegador el texto que se encuentre en el portapapeles, pegando al 
+		área de texto a procesar */
 		function pegar() {
 			  
 			let pasteTextarea = document.querySelector('.encriptarDesencriptarTexto');
@@ -135,7 +137,9 @@
 
 
 
-
+		/* Realiza limpieza de las área de texto, posteriormente llama a la función mostrarSegmento para realizar
+		
+		*/
 	
 		function limpiar() {
 		    document.getElementById("textoEncriptado").value = "";
