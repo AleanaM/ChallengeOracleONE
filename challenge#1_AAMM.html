@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Titulo de página -->
+    <title>Challenge: Encriptador de textos</title>       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Carga de icono a etiqueta de la página -->
+    <link rel="shortcut icon" href="./recursos/icono.ico">
+
+    <!-- Llamada del estilo css -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Llamada de javaScript -->
+    <script type="text/javascript"  src="jscript.js"></script>
+</head>
+
+
+<!-- Cuerpo del sitio -->
+<body>
+
+    <!-- Cabeza de la página en cual lleva el logo y el título -->
+    <header>
+       <h1><img name="logo" class="logo" src="./recursos/Logo.PNG"> Challenge #1: Encriptador de Textos</h1>
+    </header>
+
+    <!-- Div contenedor presenta el área para encriptar / desencriptar el texto -->
+    <div class="contenedor">
+
+
+        <section>
+
+                <h2>Texto a encriptar / desencriptar </h2>
+                <br>            
+
+                <!-- Área de texto que recibe el texto a encriptar o desencriptar -->
+                <textarea name="encriptarDesencriptarTexto" id="encriptarDesencriptarTexto" class="encriptarDesencriptarTexto"  placeholder="Escribe aqui el texto a encriptar..." ></textarea>
+                <br>
+                <p class="advertencia" name="advertencia">Solo letras minúsculas y sin acento</p>
+                <br>
+
+        </section>
+
+
+        <aside>
+                <h2>Resultado </h2>                
+                <br>
+
+                <!-- Segmentp derecho de la ágina la cual presentará una imagen al no contener información el área 
+                de texto encriptar/desencriptar  -->
+                <div name="previo" id="previo">
+                    <img src="./recursos/buscando.PNG">
+                    <p class="advertencia" name="advertencia">Sin texto procesado...</p>
+                </div>
+
+                <!-- Posterior al teclao de la área de texto que recibe el texto a procesar, aparece área de 
+                   texto textoEncriptado -->
+                <div name="posterior" id="posterior" style=" display:none;">                    
+                    <textarea class="textoEncriptado" name="textoEncriptado"  id="textoEncriptado" disabled invisible ></textarea>
+                    <br><br>
+                    <button class="copiar" name="copiar" onclick="copiar()">Copiar texto</button>                 
+                    <br>                    
+                </div>
+
+        </aside>
+
+
+     
+
+    </div>
+
+        <!-- Segmento de botones con sus respectivos llamados de funciones sj  -->
+        <section class="botones">
+                <button class="buttonEncriptar" name="buttonEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="buttonDesencriptar" name="buttonDesencriptar" onclick="desencriptarTexto()"> Descriptar </button>                   
+                <button class="pegar" name="pegar" onclick="pegar()"> Pegar texto </button>  
+                <button class="limpiar" name="limpiar" onclick="limpiar()"> Limpiar campos </button>  
+                <br><br>
+        </section>
+
+
+    <!-- Pie de página -->    
+    <footer>
+        <p>Developed by Alejandra Anahí Majín Martínez | Oracle ONE  - Alura Latam: Grupo 5</p>
+    </footer>
+
+</body>
+
+</html>
