@@ -65,7 +65,7 @@
 		*/
 
 		function desencriptarTexto(){
-			
+
 		    let textoDeEntrada = document.getElementById("encriptarDesencriptarTexto");
 		    let textoRecibido = textoDeEntrada.value;
 		    let textoDesencriptado = procesoDesencriptar(textoRecibido);
