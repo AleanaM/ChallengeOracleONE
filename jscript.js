@@ -63,10 +63,11 @@
 			procesoDesencriptar que pasa como parámetros en textoRecibido para posteriormente
 			pasarlo como valor a la variable textoDeSalida
 		*/
-		function desencriptarTexto(){
 
+		function desencriptarTexto(){
+			
 		    let textoDeEntrada = document.getElementById("encriptarDesencriptarTexto");
-			let textoRecibido = textoDeEntrada.value;
+		    let textoRecibido = textoDeEntrada.value;
 		    let textoDesencriptado = procesoDesencriptar(textoRecibido);
 
 		    let textoDeSalida = document.getElementById("textoEncriptado");		    
@@ -138,7 +139,7 @@
 
 
 		/* Realiza limpieza de las área de texto, posteriormente llama a la función mostrarSegmento para realizar
-		
+		limpieza
 		*/
 	
 		function limpiar() {
