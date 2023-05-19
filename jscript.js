@@ -70,6 +70,7 @@
 		    let textoRecibido = textoDeEntrada.value;
 		    let textoDesencriptado = procesoDesencriptar(textoRecibido);
 
+		    mostrarSegmento();		
 		    let textoDeSalida = document.getElementById("textoEncriptado");		    
 		    textoDeSalida.value = textoDesencriptado;
 
@@ -126,14 +127,14 @@
 
 
 		/* Funcion pegar, pegar del clipboard del navegador el texto que se encuentre en el portapapeles, pegando al 
-		área de texto a procesar */
+		área de texto a procesar 
 		function pegar() {
 			  
 			let pasteTextarea = document.querySelector('.encriptarDesencriptarTexto');
-			navigator.clipboard.readText().then((text) => { pasteTextarea.textContent = text; })			      			
+			navigator.clipboard.readText().then((text) => { pasteTextarea.textContent = text; });			      			
 			  
 		}
-
+		*/
 
 
 		/* Realiza limpieza de las área de texto, posteriormente llama a la función mostrarSegmento para realizar
